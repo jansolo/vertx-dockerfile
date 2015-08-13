@@ -1,9 +1,8 @@
-FROM lwieske/java-8
+FROM java:8
 MAINTAINER Jan Illetschko (jansolo)
 
 VOLUME /usr/local/var/lib/vertx
 WORKDIR /usr/local/var/lib/vertx
-EXPOSE 8080
 
 ADD vert.x-2.1.1.tar.gz /usr/local/share
 RUN ln -s /usr/local/share/vert.x-2.1.1/bin/vertx /usr/local/bin/vertx
